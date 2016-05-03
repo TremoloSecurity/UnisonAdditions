@@ -19,6 +19,33 @@
 	<version>1.0.6</version>
 	<name>unison-additions</name>
 	<url>http://maven.apache.org</url>
+	
+		<repositories>
+		<repository>
+			<id>tremolosecurity-dependencies</id>
+			<url>https://www.tremolosecurity.com/nexus/content/repositories/dependencies/</url>
+		</repository>
+		<repository>
+			<id>deployment</id>
+			<name>Tremolo Security Releases</name>
+			<url>https://www.tremolosecurity.com/nexus/content/repositories/releases/</url>
+		</repository>
+
+		<repository>
+			<id>jboss</id>
+			<url>https://repository.jboss.org/nexus/content/repositories/</url>
+		</repository>
+	</repositories>
+
+	<distributionManagement>
+		<repository>
+			<id>deployment</id>
+			<name>Tremolo Security Releases</name>
+			<url>https://www.tremolosecurity.com/nexus/content/repositories/releases</url>
+		</repository>
+
+	</distributionManagement>
+	
 	<dependencies>
 		<dependency>
 			<groupId>com.tremolosecurity.unison</groupId>
